@@ -1,0 +1,225 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 1.5rem; 
+    margin-left: 1rem; 
+}
+
+.navbar {
+    background-color: #D16B3D;
+    height: 6rem;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.navbar ul li a {
+    color:  #3B2F2F;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffb098;
+}
+
+body {
+    margin: 0;
+    background-color: #F5E9D7;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2 {
+    margin-left: 1rem; 
+    color: #0E1428;
+}
+
+h2 {
+    font-size: 2rem; 
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+p {
+    max-width: 38rem;
+    margin-left: 1rem; 
+    padding: 1rem;
+}
+
+footer {
+    background-color: #D16B3D;
+    color:  #3B2F2F;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+.navbar img.logo {
+    height: 4rem; 
+    margin-right: 1rem;
+}
+
+/* aspect-ratio 16/9 gebaseerd op begeleiding van https://css-tricks.com/almanac/properties/a/aspect-ratio/ */
+iframe {
+    width: 100%; 
+    max-width: 35rem; 
+    aspect-ratio: 16/9;
+    height: auto;
+    padding: 1rem;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.video-text {
+    max-width: 20rem;
+    
+}
+.video-container h2, 
+.video-container p {
+    margin: 0; 
+    padding: 0; 
+}
+
+.video-container h2 {
+    font-size: 1.8rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.video-container p {
+    font-size: 1rem;
+    line-height: 1.5; }
+
+img {
+    height: auto;
+    width: 10rem;
+    padding-left: 1rem;
+}
+
+.content-container {
+    display: flex; 
+    align-items: center;
+    margin: 2rem; 
+}
+
+
+.episode-image {
+    max-width: 10rem; 
+    height: auto; 
+    margin-right: 1rem;
+transition: transform 0.5s ease;
+ 
+}
+
+
+.episode-image:hover {
+    animation: rotate 1s infinite linear;
+    transform-origin: center;
+}
+
+@keyframes rotate { from {
+    transform: rotate(0deg);
+}
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+main p a {
+    font-size: large;
+}
+
+
+.about-us {
+    max-width: 70rem; 
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center; }
+
+.about-us h1 {
+    margin: 0; 
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    margin: 0; 
+    line-height: 1.5;
+    margin-bottom: 2rem; 
+}
+
+.profiles {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.profile {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    margin: 1.5rem 0; 
+}
+
+.profile-image {
+    width: 12rem; 
+    margin-right: 2rem; 
+}
+
+.profile:last-child .profile-image {
+    margin-left: 2rem; 
+    margin-right: 0; 
+}
+
+.profile div {
+    max-width: 30rem; 
+    text-align: left; 
+}
+
+
+.content-container p a {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #D16B3D; 
+    text-decoration: none; 
+}
+
+
+.content-container p a:hover {
+    color: #ffb098; 
+    text-decoration: underline; 
+}
+
+
+.content-container p:nth-of-type(2) {
+    font-size: 1rem; 
+    color: #333333; 
+    margin-top: 0.5rem; 
+}
+
+
+.content-container div {
+    margin-left: 1rem; 
+}
